@@ -16,6 +16,13 @@
 <script type="text/javascript">
  
 <!--
+
+ function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
  
 var namMember = new Array(
  
@@ -113,11 +120,7 @@ var namMember = new Array(
 
 "Merry Christmas Mr. Lawrence",
 
-"The Prayer with Kiira Korpi",
-
 "Nocturne in C minor, Op. 48, No.1 with Deniss Vasiļjevs",
-
-"Echo and Narcissus",
 
 "Slave to the Music",
 
@@ -146,8 +149,6 @@ var namMember = new Array(
 "Gone Too Soon",
 
 "Take Me to Church",
-
-"Prelude in G minor, Op. 23, No. 5 by Sergei Rachmaninoff",
 
 "Sense",
 
@@ -204,7 +205,7 @@ var namMember = new Array(
 "Ne Me Quitte Pas",
 
  
-);
+)shuffleArray(namMember);
  
  
  
